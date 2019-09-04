@@ -17,8 +17,3 @@ struct webview* php_webview_new(const char* title, const char* url, int width,
 }
 
 void php_webview_free(struct webview* v) { free(v); }
-void php_webview_init(struct webview* v) { webview_init(v); }
-
-void php_set_fullscreen(struct webview* v, int on) {
-  webview_set_fullscreen(v, on);
-}
